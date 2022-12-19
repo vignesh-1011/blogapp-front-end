@@ -1,0 +1,61 @@
+<div class="body-background">
+    <div class="container-fluid d-flex justify-content-center align-items-center h-100">
+       
+       <div class="card p-3 text-center py-4">
+           <h4>Create New Post</h4>
+           <div>
+               <span>Add all the details of new Post</span>
+              
+           </div>
+           <form #addPostForm="ngForm" (ngSubmit)="addPostFormProcess(addPostForm)" method="post"  enctype="multipart/form-data">
+ 
+             <div class="input-group px-3 mt-3">
+                 <input class="form-control" type="number" placeholder="Post Id" name="id" ngModel required>
+             </div>
+ 
+             <div class="input-group px-3 mt-3">
+                 <input class="form-control" type="text" placeholder="Title" name="title" ngModel required>
+             </div>
+ 
+           
+           
+             <div class="input-group px-3 mt-3">
+                 <textarea class="form-control" type="text" placeholder="Post Content" name="content" ngModel required></textarea>
+             </div>
+ 
+            
+           <div class="input-group px-3 mt-3">
+             <input class="form-control" type="number" placeholder="Post Category " name="categoryId" ngModel required>
+               <span></span>
+               <input class="form-control" [value]="userId" type="text" placeholder="User Id" name="userId" ngModel required>
+           </div>
+            
+           <div class="mt-3 d-grid px-3">
+            
+            <input class="form-control" type="file" name="file" required>
+                
+           
+        </div>
+           
+           
+           <div class="mt-3 d-grid px-3">
+               <button type="submit" class="btn btn-primary btn-block btn-signup text-uppercase">
+                   <span>Add Post</span>
+                   
+               </button>
+           </div>
+           
+           <div class="px-3">
+               <div class="mt-2 form-check d-flex flex-row">
+               <input class="form-check-input" type="hidden" value="" id="services">
+               <label class="form-check-label ms-2" for="services">
+               
+               </label>
+             </div>
+           </div>
+           </form>
+       </div>
+        
+    </div> 
+ </div>
+ 

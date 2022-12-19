@@ -1,0 +1,39 @@
+<div class="container">
+   <!-- Jumbotron -->
+<div class="p-4 shadow-4 rounded-3" style="background-color: hsl(0, 0%, 94%);">
+    <h2>Welcome to Technical Blog</h2>
+    <p>
+        We create blog posts and tutorials designed to reach software engineers.
+  
+    </p>
+  
+    <hr class="my-4" />
+  
+    <p>
+        Schedule a call to learn how we can help you execute your technical content marketing plan.
+    </p>
+    <button type="button" class="btn btn-primary">
+      Learn more
+    </button>
+  </div>
+
+  <br/>
+  <!-- Jumbotron -->
+  
+    <div class="row">
+        <!-- Blog entries-->
+
+        <div class="card" style="width: 17rem;" *ngFor="let post of posts">
+            <img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{post.title}}</h5>
+              <p class="card-text">{{post.content}}</p>
+              <a href="single-post" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+          
+         
+       
+     
+    </div>
+       <br/> <br/>

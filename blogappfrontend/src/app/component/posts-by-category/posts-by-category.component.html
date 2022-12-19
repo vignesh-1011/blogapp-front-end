@@ -1,0 +1,46 @@
+<div class="container">
+
+   <br/>
+   <h3>Blog by categories</h3>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Java</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Big Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Python</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data Science</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br/>
+   <!-- Jumbotron -->
+   
+     <div class="row">
+      
+ 
+         <div class="card" style="width: 17rem;" *ngFor="let post of posts">
+             <img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">{{post.title}}</h5>
+               <p class="card-text">{{post.content}}</p>
+               <a href="single-post" class="btn btn-primary">Read more</a>
+             </div>
+           </div>
+           
+          
+        
+      
+     </div>
+ 
+     <br/> <br/>
